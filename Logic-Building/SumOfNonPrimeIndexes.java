@@ -1,7 +1,7 @@
 public class SumOfNonPrimeIndexes {
     public int sumOfNonPrimeIndexes(int[] input1, int input2) {
         int sum = 0;
-        for (int i = 0; i <= Math.sqrt(input2); i++)
+        for (int i = 0; i <=(input2); i++)
             if (!isPrime(i))
                 sum += input1[i];
         return sum;
